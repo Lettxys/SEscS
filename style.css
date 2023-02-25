@@ -1,17 +1,16 @@
-.line {
-    width: auto;
-    height: 0.5px;
-    background-color: black;
-    align-items: center;
-}
-
 *{
-    scroll-behavior: smooth;
+ background-color: #ffffff;
 }
-header{
-    position: relative;
- }
+.hr4 {
+        border: 5;
+        border-top: 1px dashed #CCC;
+        border-bottom: 4px solid #CCC;
+        height: 10px;
+  }
 
 .cnt{
     text-align: center;
+}
+.label1{
+    align-items: center;
 }

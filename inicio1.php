@@ -17,7 +17,7 @@
             <br>
             <h2 class="cnt">Dados do Aluno</h2>
             <hr class="hr4">
-            <br>
+            
 
 
             <form method="post" action="salvar.php" id="form">
@@ -52,7 +52,7 @@
                 <br>
                 <h2 class="cnt">Dados dos Pais</h2>
                 <hr class="hr4">
-                <br>
+                
                 <div class="row mb-1">
                     <div class="col-sm-6">
                         Nome da Mãe: <input type="text" class="form-control form-control-sm" placeholder="Nome da Mãe" name="nomemae" required>
@@ -105,12 +105,11 @@
                         Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Nome" name="ltmae" required>
                     </div>
                 </div>
-
-                <br>
+<br>
 
                 <div class="row mb-1">
                     <div class="col-sm-5">
-                        <label> Em caso de EMERGÊNCIA, para quem ligar e em qual número?</label>
+                        <label> Em caso de EMERGÊNCIA, para quem ligar e em qual número?</label> <br>
                         <input type="radio" id="dad" name="emg" value="dad">
                         <label for="dad">Pai</label> &nbsp; &nbsp;
                         <input type="radio" id="mom" name="emg" value="mom">
@@ -121,11 +120,11 @@
 
                     <div class="col-sm-6">
                         Observações:
-                        <textarea style="width: 450px; height: 60px;" class="form-control form-control-sm"></textarea>
+                        <textarea style="width: 640px; height: 60px;" class="form-control form-control-sm"></textarea>
                     </div>
                 </div>
-
                 <br>
+          
                 <h2 class="cnt">Ficha de Saúde da(o) aluna(o)</h2>
                 <hr class="hr4">
                 <table class="table table-bordered">

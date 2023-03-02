@@ -42,10 +42,10 @@
 
                 <div class="row mb-1">
                     <div class="col-sm-6">
-                        Endereço Residencial: <input type="text" class="form-control form-control-sm" placeholder="Nome" name="nome" required>
+                        Endereço Residencial: <input type="text" class="form-control form-control-sm" placeholder="Endereço" name="nome" required>
                     </div>
                     <div class="col-sm-3">
-                        RG ou dados da certidão de nascimento: <input type="text" name="RG" placeholder="00.000.000-00" class="form-control form-control-sm" id="RG" maxlength="11"  required>
+                        RG ou dados da certidão de nascimento: <input type="text" name="RG" placeholder="0000000000000" class="form-control form-control-sm" id="RG" maxlength="13"  required>
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
                         Email para contato: <input type="text" name="emailmae" placeholder="example@example.com" class="form-control form-control-sm" id="emailmae" maxlength="11"  required>
                     </div>
                     <div class="col-sm-6">
-                        Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Nome" name="ltmae" required>
+                        Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Local de trabalho" name="ltmae" required>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                        Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Nome" name="ltmae" required>
+                        Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Local de trabalho" name="ltmae" required>
                     </div>
                 </div>
 <br>
@@ -116,7 +116,6 @@
                         <input type="radio" id="mom" name="emg" value="mom">
                         <label for="mom">Mãe</label> </br>
                     </div>
-
                     <div class="col-sm-1"></div>
 
                     <div class="col-sm-6">
@@ -326,8 +325,8 @@
                 <br>
 
 
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button type="submit" class="btn btn-dark" id="btnSalvar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <button type="submit" class="btn btn-dark" id="btnSalvar" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 400px;" >
                         Enviar
                     </button>
                 </div>

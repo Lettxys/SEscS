@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 
@@ -44,7 +45,7 @@
                         Endereço Residencial: <input type="text" class="form-control form-control-sm" placeholder="Nome" name="nome" required>
                     </div>
                     <div class="col-sm-3">
-                        RG ou dados da certidão de nascimento: <input type="text" name="RG" placeholder="00.000.000-00" class="form-control form-control-sm" id="RG" maxlength="11" oninput="mascaraa('RG')" required>
+                        RG ou dados da certidão de nascimento: <input type="text" name="RG" placeholder="00.000.000-00" class="form-control form-control-sm" id="RG" maxlength="11"  required>
                     </div>
                 </div>
 
@@ -58,10 +59,10 @@
                         Nome da Mãe: <input type="text" class="form-control form-control-sm" placeholder="Nome da Mãe" name="nomemae" required>
                     </div>
                     <div class="col-sm-3">
-                        Nº do CPF: <input type="text" name="cpfmae" placeholder="000.000.000-00" class="form-control form-control-sm" id="cpfmae" maxlength="11" oninput="mascaraa('RG')" required>
+                        Nº do CPF: <input type="text" name="cpfmae" placeholder="000.000.000-00" class="form-control form-control-sm" id="cpfmae" maxlength="11" oninput="mascaraCM('CpfMae')" required>
                     </div>
                     <div class="col-sm-3">
-                        Telefone de contato: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telefone" maxlength="11" oninput="mascaraa('TelFixo')" required>
+                        Telefone de contato: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telmae" maxlength="11" oninput="mascara('TelMae')" required>
                     </div>
                 </div>
 
@@ -69,7 +70,7 @@
 
                 <div class="row mb-1">
                     <div class="col-sm-6">
-                        Email para contato: <input type="text" name="emailmae" placeholder="example@example.com" class="form-control form-control-sm" id="emailmae" maxlength="11" oninput="mascaraa('RG')" required>
+                        Email para contato: <input type="text" name="emailmae" placeholder="example@example.com" class="form-control form-control-sm" id="emailmae" maxlength="11"  required>
                     </div>
                     <div class="col-sm-6">
                         Local de Trabalho (nome/endereço): <input type="text" class="form-control form-control-sm" placeholder="Nome" name="ltmae" required>
@@ -86,10 +87,10 @@
                         Nome do Pai: <input type="text" class="form-control form-control-sm" placeholder="Nome do Pai" name="nomepai" required>
                     </div>
                     <div class="col-sm-3">
-                        Nº do CPF: <input type="text" name="cpfpai" placeholder="000.000.000-00" class="form-control form-control-sm" id="cpfpai" maxlength="11" oninput="mascaraa('RG')" required>
+                        Nº do CPF: <input type="text" name="cpfpai" placeholder="000.000.000-00" class="form-control form-control-sm" id="cpfpai" maxlength="11" oninput="mascaraCP('CpfPai')" required>
                     </div>
                     <div class="col-sm-3">
-                        Telefone de contato: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telefone" maxlength="11" oninput="mascaraa('TelFixo')" required>
+                        Telefone de contato: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telpai" maxlength="11" oninput="mascaraa('TelPai')" required>
                     </div>
                 </div>
 
@@ -98,7 +99,7 @@
 
                 <div class="row mb-1">
                     <div class="col-sm-6">
-                        Email para contato: <input type="text" name="emailpai" placeholder="example@example.com" class="form-control form-control-sm" id="emailpai" maxlength="11" oninput="mascaraa('RG')" required>
+                        Email para contato: <input type="text" name="emailpai" placeholder="example@example.com" class="form-control form-control-sm" id="emailpai" maxlength="11"  required>
                     </div>
 
                     <div class="col-sm-6">
@@ -108,12 +109,12 @@
 <br>
 
                 <div class="row mb-1">
-                    <div class="col-sm-5">
+                    <div class="col-sm-5"> <br>
                         <label> Em caso de EMERGÊNCIA, para quem ligar e em qual número?</label> <br>
                         <input type="radio" id="dad" name="emg" value="dad">
                         <label for="dad">Pai</label> &nbsp; &nbsp;
                         <input type="radio" id="mom" name="emg" value="mom">
-                        <label for="mom">Mãe</label>
+                        <label for="mom">Mãe</label> </br>
                     </div>
 
                     <div class="col-sm-1"></div>
@@ -337,6 +338,7 @@
 
         <br>
     </section>
+    <script src="mask.js"></script>
 </body>
 
 </html>

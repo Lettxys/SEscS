@@ -173,7 +173,7 @@
                                 <label> Se sim, qual(is)?</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="alergiasInpI" class="form-control form-control-sm" name="alergiasInpN" >
+                                <input type="text" placeholder="Digite aqui" id="alergiasInpI" class="form-control form-control-sm" name="alergiasInpN" disabled>
                             </td>
 
                         </tr>
@@ -190,7 +190,7 @@
                                 <label> Se sim, qual(is)?</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="restAlInpI" class="form-control form-control-sm" name="restAlInpN" >
+                                <input type="text" placeholder="Digite aqui" id="restAlInpI" class="form-control form-control-sm" name="restAlInpN" disabled>
                             </td>
                         </tr>
 
@@ -241,7 +241,7 @@
                                 <label> Se sim, qual? E para que doença?</label>
                             </td>
                             <td>
-                                <input type="text" id="tratamentoMInI" placeholder="Digite aqui" class="form-control form-control-sm" name="tratamentoMInN" >
+                                <input type="text" id="tratamentoMInI" placeholder="Digite aqui" class="form-control form-control-sm" name="tratamentoMInN" disabled>
                             </td>
                         </tr>
 
@@ -258,7 +258,7 @@
                                 <label> Qual? Quando encerrará o uso?</label>
                             </td>
                             <td>
-                                <input type="text" id="medicacaoInpI" placeholder="Digite aqui" class="form-control form-control-sm" name="medicacaoInpN" >
+                                <input type="text" id="medicacaoInpI" placeholder="Digite aqui" class="form-control form-control-sm" name="medicacaoInpN" disabled>
                             </td>
                         </tr>
 
@@ -322,7 +322,7 @@
                                 <label> Se sim, qual(is)? </label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="informacaoInpI" name="informacaoInpN" class="form-control form-control-sm">
+                                <input type="text" placeholder="Digite aqui" id="informacaoInpI" name="informacaoInpN" class="form-control form-control-sm" disabled>
                             </td>
                         </tr>
                     </tbody>

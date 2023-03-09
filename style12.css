@@ -1,0 +1,11 @@
+
+#hr4 {
+  border: 3;
+  border-top: 2px dashed #CCC;
+  border-bottom: 10px solid #CCC;
+  height: 3px;
+  }
+
+#cnt{
+    text-align: center;
+}

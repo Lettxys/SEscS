@@ -1,3 +1,6 @@
+<?php include 'menu.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style12.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+   
 
     <title>Document</title>
 </head>
@@ -15,9 +19,9 @@
 <body>
     <section class="bcgb">
         <div class="container">
-            <br>
-            <h2 class="cnt">Dados do Aluno</h2>
-            <hr class="hr4">
+        <!--     <br>
+            <h2 id="cnt">Dados do Aluno</h2>
+            <hr id="hr4">
             
 
 
@@ -51,8 +55,8 @@
 
 
                 <br>
-                <h2 class="cnt">Dados dos Pais</h2>
-                <hr class="hr4">
+                <h2 id="cnt">Dados dos Pais</h2>
+                <hr id="hr4">
                 
                 <div class="row mb-1">
                     <div class="col-sm-6">
@@ -123,18 +127,19 @@
                         <textarea style="width: 640px; height: 60px;" class="form-control form-control-sm"></textarea>
                     </div>
                 </div>
-                <br>
-          
-                <h2 class="cnt">Ficha de Saúde da(o) aluna(o)</h2>
-                <hr class="hr4">
+                <br> -->
+          <br>
+          <br>
+                <h2 id="cnt">Ficha de Saúde da(o) aluna(o)</h2>
+                <hr>
                 <table class="table table-bordered">
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td style="width:500px"> <label> É dependente em plano de saúde?</label> </td>
-                            <td style="width: 150px;"> </i> <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                            <td style="width: 150px;"> </i> <select class="form-select" name="dependentePSN" id="dependentePSI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select> </td>
                             <td></td>
                             <td></td>
@@ -143,9 +148,9 @@
                         <tr>
                             <th scope="row">2</th>
                             <td> <label> Tem algum problema de saúde crônico?</label> </td>
-                            <td> <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                            <td> <select class="form-select" name="problemaSCN" id="problemaSCI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select> </td>
                             <td> </td>
                             <td> </td>
@@ -159,16 +164,16 @@
                                 <label> Tem alergia(s)?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="alergiasN" id="alergiasI" onchange="verifica(this.value)">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td style="text-align: center;">
                                 <label> Se sim, qual(is)?</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="" class="form-control form-control-sm">
+                                <input type="text" placeholder="Digite aqui" id="alergiasInpI" class="form-control form-control-sm" name="alergiasInpN" >
                             </td>
 
                         </tr>
@@ -177,15 +182,15 @@
                             <th scope="row">4</th>
                             <td> <label> Possui alguma restrição alimentar?</label> </td>
 
-                            <td> <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                            <td> <select class="form-select" name="restricaoAlN" id="restricaoAlI"  onchange="verifica1(this.value)">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select> </td>
                             <td style="text-align: center;">
                                 <label> Se sim, qual(is)?</label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="" class="form-control form-control-sm">
+                                <input type="text" placeholder="Digite aqui" id="restAlInpI" class="form-control form-control-sm" name="restAlInpN" >
                             </td>
                         </tr>
 
@@ -196,9 +201,9 @@
                                 <label> Já recebeu diagnóstico médico de deficiência?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="deficienciaN" id="deficienciaI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td></td>
@@ -212,9 +217,9 @@
                                 <label> Apresenta alguma dificuldade motora, auditiva, visual, na fala ou emocional?</label>
                             </td>
                             <td style="height: 15px;">
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="dificuldadeN" id="dificuldadeI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td></td>
@@ -227,16 +232,16 @@
                                 <label> Está em tratamento médico? </label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="tratamentoMN" id="tratamentoMI" onchange="verifica2(this.value)">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td style="text-align: center;">
                                 <label> Se sim, qual? E para que doença?</label>
                             </td>
                             <td>
-                                <input type="text" id="" placeholder="Digite aqui" class="form-control form-control-sm">
+                                <input type="text" id="tratamentoMInI" placeholder="Digite aqui" class="form-control form-control-sm" name="tratamentoMInN" >
                             </td>
                         </tr>
 
@@ -244,16 +249,16 @@
                             <th scope="row">8</th>
                             <td> <label> Está em uso de alguma medicação? </label> </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="medicacaoN" id="medicacaoI" onchange="verifica3(this.value)">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td style="text-align: center;">
                                 <label> Qual? Quando encerrará o uso?</label>
                             </td>
                             <td>
-                                <input type="text" id="" placeholder="Digite aqui" class="form-control form-control-sm">
+                                <input type="text" id="medicacaoInpI" placeholder="Digite aqui" class="form-control form-control-sm" name="medicacaoInpN" >
                             </td>
                         </tr>
 
@@ -263,9 +268,9 @@
                                 <label> As vacinas do calendário de vacinação do Ministério da Saúde estão em dia?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="vacinaN" id="vacinaI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td></td>
@@ -278,9 +283,9 @@
                                 <label> É acompanhado por psicólogo, terapeuta ocupacional ou fonoaudiólogo?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="acompanhadoN" id="acompanhadoI">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td></td>
@@ -293,9 +298,9 @@
                                 <label> Em caso de emergência para quem ligar e em qual número?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Pai</option>
-                                    <option value="">Mãe</option>
+                                <select class="form-select" name="emergencia" id="emergencia">
+                                    <option value="pai">Pai</option>
+                                    <option value="mae">Mãe</option>
                                 </select>
                             </td>
                             <td></td>
@@ -308,16 +313,16 @@
                                 <label> Existe alguma outra informação a respeito da saúde do aluno que o responsável queira fazer constar desta ficha?</label>
                             </td>
                             <td>
-                                <select class="form-select" name="" id="">
-                                    <option value="">Sim</option>
-                                    <option value="">Não</option>
+                                <select class="form-select" name="informacaoN" id="informacaoI" onchange="verifica4(this.value)">
+                                    <option value="sim">Sim</option>
+                                    <option value="nao">Não</option>
                                 </select>
                             </td>
                             <td style="text-align: center;">
                                 <label> Se sim, qual(is)? </label>
                             </td>
                             <td>
-                                <input type="text" placeholder="Digite aqui" id="" class="form-control form-control-sm">
+                                <input type="text" placeholder="Digite aqui" id="informacaoInpI" name="informacaoInpN" class="form-control form-control-sm">
                             </td>
                         </tr>
                     </tbody>
@@ -326,7 +331,7 @@
 
 
                 <div class="d-grid gap-2 col-4 mx-auto">
-                    <button type="submit" class="btn btn-dark" id="btnSalvar" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 400px;" >
+                    <button type="submit" class="btn btn-dark" id="btnSalvar" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                         Enviar
                     </button>
                 </div>

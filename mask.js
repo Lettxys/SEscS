@@ -50,3 +50,58 @@ function mascara(mascaraInput) {
                     }
                 }
                 
+            
+
+                function verifica(value){
+                    var input = document.getElementById("alergiasInpI");
+                
+                  if(value == "sim"){
+                    input.disabled = false;
+                  }else if(value == "nao"){
+                    input.disabled = true;
+                  }
+                };
+
+                
+                function verifica1(value){
+                    var input = document.getElementById("restAlInpI");
+                
+                  if(value == "sim"){
+                    input.disabled = false;
+                  }else if(value == "nao"){
+                    input.disabled = true;
+                  }
+                };
+
+                   
+                function verifica2(value){
+                    var input = document.getElementById("tratamentoMInI");
+                
+                  if(value == "sim"){
+                    input.disabled = false;
+                  }else if(value == "nao"){
+                    input.disabled = true;
+                  }
+                };
+
+               
+                function verifica3(value){
+                    var input = document.getElementById("medicacaoInpI");
+                
+                  if(value == "sim"){
+                    input.disabled = false;
+                  }else if(value == "nao"){
+                    input.disabled = true;
+                  }
+                };
+
+
+                function verifica4(value){
+                    var input = document.getElementById("informacaoInpI");
+                
+                  if(value == "sim"){
+                    input.disabled = false;
+                  }else if(value == "nao"){
+                    input.disabled = true;
+                  }
+                };
